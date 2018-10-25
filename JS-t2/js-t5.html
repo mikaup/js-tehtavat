@@ -5,6 +5,26 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+  let lasku, luku;
+  const kysymys = window.confirm('Lasketaanko neliöjuuri?');
 
+  if (kysymys) {
+
+    luku = prompt('Anna luku');
+    if (luku < 0) {
+      document.write('Negatiivisen luvun neliöjuuri ei ole määritelty!');
+    }
+    else if (luku > 0) {
+
+      lasku = Math.sqrt(luku);
+      document.write('Luvun neliöjuuri on ' + lasku);
+    }
+  } else {
+    document.write('Neliöjuurta ei lasketa.');
+  }
+
+
+</script>
 </body>
 </html>
