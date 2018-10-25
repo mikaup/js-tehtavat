@@ -7,7 +7,40 @@
 <body>
  <script>
      let suku,hemo;
-     suku = prompt('Oletko mies vai nainen? ( 1=mies, 2=nainen');
+     suku = prompt('Oletko mies vai nainen? ( M=mies, N=nainen');
+     switch(suku) {
+       case 'M':
+            hemo = prompt('Syötä hemoglobiiniarvosi (g/l)');
+            if (hemo<134) {
+              document.write('Hemoglobiini arvosi ovat alhaiset')
+            }
+            else if (hemo>195) {
+              document.write('Hemoglobiini arvosi ovat korkeat')
+            }
+            else {
+              document.write('Hemoglobiini arvosi ovat normaalit')
+            }
+
+
+         break;
+
+
+       case 'N':
+           hemo = prompt('Syötä hemoglobiiniarvosi (g/l)');
+         if (hemo<117) {
+           document.write('Hemoglobiini arvosi ovat alhaiset')
+         }
+         else if (hemo>175) {
+           document.write('Hemoglobiini arvosi ovat korkeat')
+         }
+         else {
+           document.write('Hemoglobiini arvosi ovat normaalit')
+         }
+         break;
+       default:
+         document.write('Virheellinen syöttö!')
+
+     }
 
  </script>
 </body>

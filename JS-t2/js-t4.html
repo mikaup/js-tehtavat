@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     let raha, hinta;
+     hinta = 3.20;
+     raha = prompt('Kuinka paljon rahaa sinulla on lompakossa?');
+
+     if (raha-hinta>=0) {
+       raha=raha-hinta;
+       document.write('Hyvää matkaa, lompakossa on jäljellä ' + raha, ' €');
+     }
+     else {
+       document.write('Rahat eivät riitä lippuun, lompakkoon olisi jäänyt ' + raha, ' €');
+     }
+ </script>
+</body>
+</html>
