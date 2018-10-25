@@ -7,13 +7,13 @@
 <body>
     <script>
         let luku1, luku2, luku3, summa, tulo, keski;
-        luku1 = prompt('Syötä ensimmäinen luku');
-        luku2 = prompt('syötä toinen luku');
-        luku3 = prompt('syötä kolmas luku');
+        luku1 = +prompt('Syötä ensimmäinen luku');
+        luku2 = +prompt('syötä toinen luku');
+        luku3 = +prompt('syötä kolmas luku');
         summa = luku1 + luku2 + luku3;
         tulo = luku1 * luku2 * luku3;
         keski = summa / 3;
-        document.write('Lukujen summa '+ summa, 'lukejen tulo '+ tulo, ' ja lukujen keskiarvo '+ keski);
+        document.write('Lukujen summa ' + summa, ' lukejen tulo '+ tulo, ' ja lukujen keskiarvo '+ keski);
     </script>
 </body>
 </html>
