@@ -5,19 +5,25 @@
     <title>Title</title>
 </head>
 <body>
- <script>
-     let luku, kysy,lasku;
-     kysy = 0;
-
-     while (kysy < 1) {
-       luku = prompt('Syötä kokonaisluku');
-       if ((luku%luku==0) && (luku%1==0)) {
-         document.write('Syöttämäsi luku on alkuluku');
-       }
-       else {
-         document.write(' Syöttämäsi luku ei ole alkuluku');
-       }
-     }
- </script>
+<script>
+  let luku, kysy, testi;
+  kysy = 0;
+  testi = true;
+  //while (kysy < 1) {
+    luku = prompt('Syötä kokonaisluku');
+    for (let i = 2; i < luku; i++) {
+      if (luku % i === 0) {
+        testi = false;
+        break;
+      }
+    }
+    if (testi) {
+      document.write('Syöttämäsi luku on alkuluku         ');
+    }
+    else {
+      document.write(' Syöttämäsi luku ei ole alkuluku       ');
+    }
+  //}
+</script>
 </body>
 </html>
