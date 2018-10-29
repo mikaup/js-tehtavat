@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let luku, tulos;
+  luku = prompt('Syötä positiivinen luku');
+  while ( luku < 0) {
+    luku = prompt('Negatiivinen luku ei kelpaa!');
+  }
+
+  tulos =Math.sqrt(luku);
+  document.write('luvun ' + luku, ' neliöjuuri on ' + tulos);
+
+</script>
+</body>
+</html>
