@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        let maara,nimi;
+        let taulu = [maara];
+
+        maara = prompt('Kuinka monta osallistujaa on?');
+
+       for (i=0; i<maara; i++) {
+         nimi = prompt('Syötä nimi');
+         taulu[i] = nimi;
+         document.write((i + 1 ),  taulu[i]  );
+        document.write("<br>");
+       }
+    </script>
+</body>
+</html>
