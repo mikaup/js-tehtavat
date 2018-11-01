@@ -10,14 +10,16 @@
      let luku;
      let i;
      i=0;
-
-   do {
-     luku = prompt('Syötä numero');
-     luvut[i]=luku;
-    i++;
-   }while (luku===!0)
-     luvut.sort();
-   document.write(luvut);
+     do {
+       luku = prompt('Syötä numero');
+        luvut[i] = luku;
+       i++;
+     }while (luku>0);
+luvut.sort(function(a, b) {
+  return a - b;
+});
+luvut.reverse();
+     document.write(luvut);
  </script>
 </body>
 </html>

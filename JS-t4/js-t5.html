@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     'use strict';
+     let luvut = [];
+     let luku;
+     let i = 0;
+     let go = false;
+     let check;
+
+
+
+     while (go === false) {
+
+       luku = prompt('Syötä luku 1-1000 väliltä');
+       check = luvut.includes(+luku);
+       if (check === true) {
+         document.write('Luku on jo annettu, ohjelma lopetetaan!');
+         go = true;
+
+       }
+       luvut[i] = +luku;
+       i++;
+     }
+
+
+ </script>
+</body>
+</html>
