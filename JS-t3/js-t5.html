@@ -8,21 +8,17 @@
 <script>
   let luku, kysy, testi;
   kysy = 0;
-  testi = true;
+  testi = 'on';
   //while (kysy < 1) {
     luku = prompt('Syötä kokonaisluku');
     for (let i = 2; i < luku; i++) {
       if (luku % i === 0) {
-        testi = false;
+        testi = 'ei ole';
         break;
       }
     }
-    if (testi) {
-      document.write('Syöttämäsi luku on alkuluku         ');
-    }
-    else {
-      document.write(' Syöttämäsi luku ei ole alkuluku       ');
-    }
+
+  document.write(' Syöttämäsi luku ' + testi + ' alkuluku       ');
   //}
 </script>
 </body>
