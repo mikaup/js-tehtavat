@@ -6,8 +6,8 @@ const kuvat = [
   'http://placekitten.com/331/240',
 ];
 
+const html = document.querySelector('ul');
 
-const html = document.getElementsByTagName('ul');
-const taulu =
-    kuvat;
-html.innerHTML = taulu;
+for (let i = 0; i < kuvat.length; i++) {
+  html.innerHTML += '<li><img src="' + kuvat[i] + '"></li>';
+}
