@@ -11,7 +11,7 @@ const lisays = document.querySelectorAll('tr')[0];
 
 lisays.innerHTML += '<th>Puh.</th>';
 
+document.querySelectorAll('th')[2].innerHTML = delete('th');
 document.querySelectorAll('td')[2].innerHTML = delete('td');
-document.querySelectorAll('tr')[2];
-elem.parentNode.removeChild(elem);
+
 

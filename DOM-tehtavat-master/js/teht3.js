@@ -5,3 +5,9 @@ const kuvat = [
   'http://placekitten.com/321/240',
   'http://placekitten.com/331/240',
 ];
+
+
+const html = document.getElementsByTagName('ul');
+const taulu =
+    kuvat;
+html.innerHTML = taulu;
