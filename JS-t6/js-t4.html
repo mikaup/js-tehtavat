@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <script>
+     const  luvut = (arvo1,arvo2,arvo3) =>
+     {
+       if (arvo1>=arvo2 && arvo1>=arvo3)   {
+
+       return arvo1;
+     }else if (arvo2>=arvo1 && arvo2>=arvo3){
+
+         return arvo2;
+       }else {
+
+         return arvo3;
+       }
+
+
+
+
+
+     };
+     let luku1,luku2,luku3,kutsu;
+     luku1 = prompt('Syötä luku1');
+     luku2 = prompt('Syötä luku2');
+     luku3 = prompt('Syötä luku3');
+     kutsu = luvut(luku1,luku2,luku3);
+     document.write('Suurin syöttämistäsi luvuista on: ' + kutsu );
+ </script>
+</body>
+</html>
