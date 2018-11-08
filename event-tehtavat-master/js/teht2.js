@@ -1,8 +1,10 @@
+const kuva = document.querySelector('#kuva');
+const p = document.querySelector('p');
 
-document.querySelector('#kuva').mouseenter(function() {
-     ('p').css(display, visible);
-   });
+kuva.addEventListener('mouseenter', function() {
+  p.style.display = 'block';
+});
 
-('#kuva').mouseleave(function() {
-  ('p').css(display, hidden);
+kuva.addEventListener('mouseleave', function() {
+  p.style.display = 'none';
 });
