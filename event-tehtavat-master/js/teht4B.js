@@ -12,3 +12,6 @@ const pics = [
     big: 'https://placeimg.com/640/480/tech',
   },
 ];
+
+const body = document.querySelector('body');
+body.innerHTML = pics;
